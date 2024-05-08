@@ -5,7 +5,7 @@
 
 include:
   - project: "univention/customers/dataport/upx/common-ci"
-    ref: "v1.30.2"
+    ref: "v1.30.3"
     file:
       - "defaults/stages.yaml"
       - "defaults/nubus-workflow.yaml"
@@ -18,13 +18,6 @@ include:
 
 variables:
   IMAGE_NAME: "keycloak-bootstrap"
-  DEBUG: "nalogo"
-
-package-helm-charts:
-  variables:
-    RUNNER_REGISTRY_IMAGE: "gitregistry.knut.univention.de/univention/dist/ci-images/helm/helm"
-    RUNNER_IMAGE_TAG: "1.25.1-pre-jconde-fix-global-registry-override"
-    REGISTRY_IMAGE: "artifacts.software-univention.de/nubus-dev/images"
 
 lint-pre-commit:
   before_script:
