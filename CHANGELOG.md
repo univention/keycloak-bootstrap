@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.1](https://git.knut.univention.de/univention/components/keycloak-bootstrap/compare/v0.1.0...v0.1.1) (2024-07-25)
+
+
+### Bug Fixes
+
+* unfork leftovers ([f09a143](https://git.knut.univention.de/univention/components/keycloak-bootstrap/commit/f09a1430a130725f88cd5aa7bab3e14c00d4085e))
+
 ## [0.1.0](https://git.knut.univention.de/univention/components/keycloak-bootstrap/compare/v0.0.2...v0.1.0) (2024-05-14)
 
 
