@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.1](https://git.knut.univention.de/univention/components/keycloak-bootstrap/compare/v0.2.0...v0.2.1) (2024-09-11)
+
+
+### Bug Fixes
+
+* disable logging of credentials ([f1de6b7](https://git.knut.univention.de/univention/components/keycloak-bootstrap/commit/f1de6b7b518486684dd213982f85339f4ef47168))
+
 ## [0.2.0](https://git.knut.univention.de/univention/components/keycloak-bootstrap/compare/v0.1.2...v0.2.0) (2024-08-27)
 
 
