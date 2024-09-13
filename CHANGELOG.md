@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.3.0](https://git.knut.univention.de/univention/components/keycloak-bootstrap/compare/v0.2.1...v0.3.0) (2024-09-13)
+
+
+### Features
+
+* update UCS base image to 2024-09-09 ([2ccfa54](https://git.knut.univention.de/univention/components/keycloak-bootstrap/commit/2ccfa54598d8634f8b4613e3419cc159c18f6556))
+
+
+### Bug Fixes
+
+* upgrade ansible package ([d3c15fa](https://git.knut.univention.de/univention/components/keycloak-bootstrap/commit/d3c15fa9276dbbf06e93a4281bc03ef838f4c546))
+
 ## [0.2.1](https://git.knut.univention.de/univention/components/keycloak-bootstrap/compare/v0.2.0...v0.2.1) (2024-09-11)
 
 
