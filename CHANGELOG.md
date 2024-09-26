@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.4.0](https://git.knut.univention.de/univention/components/keycloak-bootstrap/compare/v0.3.0...v0.4.0) (2024-09-26)
+
+
+### Features
+
+* **ci:** enable malware scanning, disable sbom generation ([be86335](https://git.knut.univention.de/univention/components/keycloak-bootstrap/commit/be86335b65189bae64cf6306d1bf8eee81968c7b))
+
 ## [0.3.0](https://git.knut.univention.de/univention/components/keycloak-bootstrap/compare/v0.2.1...v0.3.0) (2024-09-13)
 
 
