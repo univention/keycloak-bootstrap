@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.5.0](https://git.knut.univention.de/univention/components/keycloak-bootstrap/compare/v0.4.0...v0.5.0) (2024-10-15)
+
+
+### Features
+
+* enable realm user events on initialization ([81d33b3](https://git.knut.univention.de/univention/components/keycloak-bootstrap/commit/81d33b3ebeb45adea230eb512e20e2faf88e21c6))
+
 ## [0.4.0](https://git.knut.univention.de/univention/components/keycloak-bootstrap/compare/v0.3.0...v0.4.0) (2024-09-26)
 
 
