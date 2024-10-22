@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.6.0](https://git.knut.univention.de/univention/components/keycloak-bootstrap/compare/v0.5.0...v0.6.0) (2024-10-22)
+
+
+### Features
+
+* added portal to the keycloak realm CSP ([3babdab](https://git.knut.univention.de/univention/components/keycloak-bootstrap/commit/3babdabd4858523d3c86e3a891fca1c404be9a99))
+
 ## [0.5.0](https://git.knut.univention.de/univention/components/keycloak-bootstrap/compare/v0.4.0...v0.5.0) (2024-10-15)
 
 
