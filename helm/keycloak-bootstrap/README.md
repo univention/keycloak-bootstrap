@@ -51,18 +51,15 @@ A Helm chart to bootstrap Keycloak
 | image.repository | string | `"nubus-dev/images/keycloak-bootstrap"` | Container repository string. |
 | image.tag | string | `"latest"` | Define image tag. |
 | imagePullSecrets | list | `[]` | Credentials to fetch images from private registry Ref: https://kubernetes.io/docs/tasks/configure-pod-container/pull-image-private-registry/  imagePullSecrets:   - "docker-registry"  |
-| keycloak | object | `{"auth":{"credentialSecret":{"key":"password","name":""},"password":"","realm":"","username":""},"connection":{"host":"","port":""}}` | Keycloak settings. |
-| keycloak.auth.credentialSecret | object | `{"key":"password","name":""}` | Keycloak password secret reference. |
-| keycloak.auth.password | string | `""` | Keycloak password. |
+| keycloak | object | `{"auth":{"realm":"","username":""},"connection":{"host":"","port":""}}` | Keycloak settings. |
 | keycloak.auth.realm | string | `""` | Keycloak realm. |
 | keycloak.auth.username | string | `""` | Keycloak user. |
 | keycloak.connection | object | `{"host":"","port":""}` | Connection parameters. |
 | keycloak.connection.host | string | `""` | Keycloak host. |
 | keycloak.connection.port | string | `""` | Keycloak port. |
-| ldap | object | `{"auth":{"bindDn":"","credentialSecret":{"key":"password","name":""}},"connection":{"host":"","port":"","protocol":"","tls":{"ca":{"secretKeyRef":{"key":"ca.crt","name":""}},"cert":{"secretKeyRef":{"key":"tls.crt","name":""}},"enabled":false,"key":{"secretKeyRef":{"key":"tls.key","name":""}}}}}` | LDAP settings. |
-| ldap.auth | object | `{"bindDn":"","credentialSecret":{"key":"password","name":""}}` | LDAP authentication parameters. |
+| ldap | object | `{"auth":{"bindDn":""},"connection":{"host":"","port":"","protocol":"","tls":{"ca":{"secretKeyRef":{"key":"ca.crt","name":""}},"cert":{"secretKeyRef":{"key":"tls.crt","name":""}},"enabled":false,"key":{"secretKeyRef":{"key":"tls.key","name":""}}}}}` | LDAP settings. |
+| ldap.auth | object | `{"bindDn":""}` | LDAP authentication parameters. |
 | ldap.auth.bindDn | string | `""` | LDAP bind DN. (user to authenticate with LDAP server) |
-| ldap.auth.credentialSecret | object | `{"key":"password","name":""}` | LDAP bind password secret reference. |
 | ldap.connection | object | `{"host":"","port":"","protocol":"","tls":{"ca":{"secretKeyRef":{"key":"ca.crt","name":""}},"cert":{"secretKeyRef":{"key":"tls.crt","name":""}},"enabled":false,"key":{"secretKeyRef":{"key":"tls.key","name":""}}}}` | LDAP connection parameters. |
 | ldap.connection.host | string | `""` | LDAP host. |
 | ldap.connection.port | string | `""` | LDAP port. |
