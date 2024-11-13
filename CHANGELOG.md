@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.7.0](https://git.knut.univention.de/univention/components/keycloak-bootstrap/compare/v0.6.0...v0.7.0) (2024-11-13)
+
+
+### Features
+
+* migrate components secrets ([2b0f08a](https://git.knut.univention.de/univention/components/keycloak-bootstrap/commit/2b0f08a85a3b085ebf5f230fdf45c800b6744cb0))
+
+
+### Bug Fixes
+
+* QA changes ([b55c4e3](https://git.knut.univention.de/univention/components/keycloak-bootstrap/commit/b55c4e37a3deaa53b531151e70684b37e58a4895))
+
 ## [0.6.0](https://git.knut.univention.de/univention/components/keycloak-bootstrap/compare/v0.5.0...v0.6.0) (2024-10-22)
 
 
