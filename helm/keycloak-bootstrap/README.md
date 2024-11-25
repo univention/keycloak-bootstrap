@@ -31,7 +31,8 @@ A Helm chart to bootstrap Keycloak
 | containerSecurityContext.allowPrivilegeEscalation | bool | `false` | Enable container privileged escalation. |
 | containerSecurityContext.capabilities | object | `{"drop":["ALL"]}` | Security capabilities for container. |
 | containerSecurityContext.enabled | bool | `true` | Enable security context. |
-| containerSecurityContext.readOnlyRootFilesystem | bool | `false` | Mounts the container's root filesystem as read-only. |
+| containerSecurityContext.privileged | bool | `false` |  |
+| containerSecurityContext.readOnlyRootFilesystem | bool | `true` | Mounts the container's root filesystem as read-only. |
 | containerSecurityContext.runAsGroup | int | `1000` | Process group id. |
 | containerSecurityContext.runAsNonRoot | bool | `true` | Run container as user. |
 | containerSecurityContext.runAsUser | int | `1000` | Process user id. |
