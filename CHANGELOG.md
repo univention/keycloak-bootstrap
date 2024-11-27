@@ -1,5 +1,15 @@
 # Changelog
 
+## [0.7.1](https://git.knut.univention.de/univention/components/keycloak-bootstrap/compare/v0.7.0...v0.7.1) (2024-11-27)
+
+
+### Bug Fixes
+
+* kyverno lint ([9286892](https://git.knut.univention.de/univention/components/keycloak-bootstrap/commit/9286892eeab2070e08c1eedba86e6976f987737a))
+* lint ([f2db8ff](https://git.knut.univention.de/univention/components/keycloak-bootstrap/commit/f2db8fffb923f48d54be1be35fdaa12b5778e53d))
+* set ro filesystem ([f3809ff](https://git.knut.univention.de/univention/components/keycloak-bootstrap/commit/f3809ffc3126b98a73157ee8bdfe314a7b027010))
+* upgrade univention-keycloak-client version ([c9aee64](https://git.knut.univention.de/univention/components/keycloak-bootstrap/commit/c9aee64d37d98ec4f31b80516e8236eef5a7ff16))
+
 ## [0.7.0](https://git.knut.univention.de/univention/components/keycloak-bootstrap/compare/v0.6.0...v0.7.0) (2024-11-13)
 
 
