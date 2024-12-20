@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.8.0](https://git.knut.univention.de/univention/components/keycloak-bootstrap/compare/v0.7.1...v0.8.0) (2024-12-20)
+
+
+### Features
+
+* upgrade UCS base image to 2024-12-12 ([7d2e988](https://git.knut.univention.de/univention/components/keycloak-bootstrap/commit/7d2e9880231ca441628e990d733c10851ecbf004))
+
 ## [0.7.1](https://git.knut.univention.de/univention/components/keycloak-bootstrap/compare/v0.7.0...v0.7.1) (2024-11-27)
 
 
