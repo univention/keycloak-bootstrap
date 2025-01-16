@@ -1,5 +1,18 @@
 # Changelog
 
+## [0.9.0](https://git.knut.univention.de/univention/components/keycloak-bootstrap/compare/v0.8.0...v0.9.0) (2025-01-16)
+
+
+### Features
+
+* rely on initContainers instead of helm hooks ([b392ee6](https://git.knut.univention.de/univention/components/keycloak-bootstrap/commit/b392ee6a55a9e2cdd1208fcb3be2cecc8c90e88f))
+
+
+### Bug Fixes
+
+* QA changes ([117924c](https://git.knut.univention.de/univention/components/keycloak-bootstrap/commit/117924c6b7bf5ece20c2f2fbb55118eb348fe37a))
+* workaround to avoid bugged univention-keycloak version ([b086179](https://git.knut.univention.de/univention/components/keycloak-bootstrap/commit/b0861799020f6ef37acfaab718d94a28594b016e))
+
 ## [0.8.0](https://git.knut.univention.de/univention/components/keycloak-bootstrap/compare/v0.7.1...v0.8.0) (2024-12-20)
 
 
