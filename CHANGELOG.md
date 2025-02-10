@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.9.1](https://git.knut.univention.de/univention/components/keycloak-bootstrap/compare/v0.9.0...v0.9.1) (2025-02-10)
+
+
+### Bug Fixes
+
+* add .kyverno to helmignore ([2f6361e](https://git.knut.univention.de/univention/components/keycloak-bootstrap/commit/2f6361e51f313b5975a77bfb62a08449c8a61e11))
+
 ## [0.9.0](https://git.knut.univention.de/univention/components/keycloak-bootstrap/compare/v0.8.0...v0.9.0) (2025-01-16)
 
 
