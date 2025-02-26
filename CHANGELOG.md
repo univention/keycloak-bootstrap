@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.10.1](https://git.knut.univention.de/univention/components/keycloak-bootstrap/compare/v0.10.0...v0.10.1) (2025-02-26)
+
+
+### Bug Fixes
+
+* Bump wait-for-dependency image ([6a92dcd](https://git.knut.univention.de/univention/components/keycloak-bootstrap/commit/6a92dcda15fbe74c2a6f7b03db01c92d3a7c9532))
+
 ## [0.10.0](https://git.knut.univention.de/univention/components/keycloak-bootstrap/compare/v0.9.1...v0.10.0) (2025-02-26)
 
 
