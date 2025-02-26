@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.10.0](https://git.knut.univention.de/univention/components/keycloak-bootstrap/compare/v0.9.1...v0.10.0) (2025-02-26)
+
+
+### Features
+
+* Bump ucs-base-image to use released apt sources ([fbe6e41](https://git.knut.univention.de/univention/components/keycloak-bootstrap/commit/fbe6e41c98330f9c31097f4f7d7b30f48709e846))
+
 ## [0.9.1](https://git.knut.univention.de/univention/components/keycloak-bootstrap/compare/v0.9.0...v0.9.1) (2025-02-10)
 
 
