@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.10.2](https://git.knut.univention.de/univention/components/keycloak-bootstrap/compare/v0.10.1...v0.10.2) (2025-03-21)
+
+
+### Bug Fixes
+
+* fix namespace template in serviceacount ([48c971c](https://git.knut.univention.de/univention/components/keycloak-bootstrap/commit/48c971c111998ae8b478b8bf92e82760fa733238)), closes [univention/dev/internal/team-nubus#1075](https://git.knut.univention.de/univention/dev/internal/team-nubus/issues/1075)
+
 ## [0.10.1](https://git.knut.univention.de/univention/components/keycloak-bootstrap/compare/v0.10.0...v0.10.1) (2025-02-26)
 
 
