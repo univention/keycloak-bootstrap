@@ -98,7 +98,7 @@ helm install my-release ${CI_PROJECT_NAME}/keycloak-bootstrap
 | waitForDependency.image.imagePullPolicy | string | `"IfNotPresent"` |  |
 | waitForDependency.image.registry | string | `"artifacts.software-univention.de"` |  |
 | waitForDependency.image.repository | string | `"nubus/images/wait-for-dependency"` |  |
-| waitForDependency.image.tag | string | `"0.28.0@sha256:816ad27b76046be360398274ba3c1f1bcec8f58c2ea5a200b2fb675aab1a5ab8"` |  |
+| waitForDependency.image.tag | string | `"0.30.0@sha256:fa804c2a10aa42439bf3f388007d7e55c046d6da6dc8a74c27f5a989fd422c8d"` |  |
 
 ## Uninstalling the Chart
 

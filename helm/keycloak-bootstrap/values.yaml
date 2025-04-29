@@ -138,7 +138,7 @@ waitForDependency:
   image:
     registry: "artifacts.software-univention.de"
     repository: "nubus/images/wait-for-dependency"
-    tag: "0.28.0@sha256:816ad27b76046be360398274ba3c1f1bcec8f58c2ea5a200b2fb675aab1a5ab8"
+    tag: "0.30.0@sha256:fa804c2a10aa42439bf3f388007d7e55c046d6da6dc8a74c27f5a989fd422c8d"
     imagePullPolicy: "IfNotPresent"
 
 # -- Node labels for pod assignment
