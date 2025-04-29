@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.11.0](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-bootstrap/compare/v0.10.2...v0.11.0) (2025-04-29)
+
+
+### Features
+
+* Bump ucs-base-image to 5.2-1 ([2965442](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-bootstrap/commit/2965442fc20fc98269c43b1ee5b08ff2fb1044c9)), closes [univention/dev/internal/team-nubus#1155](https://git.knut.univention.de/univention/dev/internal/team-nubus/issues/1155)
+
+
+### Bug Fixes
+
+* final version of wait-for-dependency ([66142db](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-bootstrap/commit/66142dbe6542365c5a2c072d3a398da9a134755d)), closes [univention/dev/internal/team-nubus#1155](https://git.knut.univention.de/univention/dev/internal/team-nubus/issues/1155)
+
 ## [0.10.2](https://git.knut.univention.de/univention/components/keycloak-bootstrap/compare/v0.10.1...v0.10.2) (2025-03-21)
 
 
