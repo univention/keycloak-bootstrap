@@ -1,5 +1,19 @@
 # Changelog
 
+## [0.12.0](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-bootstrap/compare/v0.11.0...v0.12.0) (2025-05-11)
+
+
+### Features
+
+* move and upgrade ucs-base-image to 0.17.3-build-2025-05-11 ([4850498](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-bootstrap/commit/48504986e48efe5c498f4669148b286178bc9b9d))
+
+
+### Bug Fixes
+
+* add bitnami to package-helm-charts ([d9980f1](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-bootstrap/commit/d9980f1c19f7e27952ab2382eacbb5c8def4348e))
+* move addlicense pre-commit hook ([d2bd9c9](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-bootstrap/commit/d2bd9c951b4a54b41da2659ef3d387b7f3e07f68))
+* update common-ci to main ([4109991](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-bootstrap/commit/41099916ebce2bbbd9444216fc0e0be9629d2a6d))
+
 ## [0.11.0](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-bootstrap/compare/v0.10.2...v0.11.0) (2025-04-29)
 
 
