@@ -23,6 +23,10 @@ lint-pre-commit:
   before_script:
     - "helm repo add bitnami https://charts.bitnami.com/bitnami"
 
+package-helm-charts:
+  before_script:
+    - "helm repo add bitnami https://charts.bitnami.com/bitnami"
+
 check-debian-updates:
   variables:
     TARGET_IMAGE: "${CI_REGISTRY_IMAGE}/${IMAGE_NAME}:latest"
