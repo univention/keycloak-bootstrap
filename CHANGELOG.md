@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.12.2](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-bootstrap/compare/v0.12.1...v0.12.2) (2025-06-21)
+
+
+### Bug Fixes
+
+* use the right wait-for-dependency image ([570f7a2](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-bootstrap/commit/570f7a27762d47d7f792e9b8d85df7d3a7ceed52)), closes [univention/dev/internal/team-nubus#1263](https://git.knut.univention.de/univention/dev/internal/team-nubus/issues/1263)
+
 ## [0.12.1](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-bootstrap/compare/v0.12.0...v0.12.1) (2025-06-18)
 
 
