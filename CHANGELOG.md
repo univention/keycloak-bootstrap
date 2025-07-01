@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.13.0](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-bootstrap/compare/v0.12.2...v0.13.0) (2025-07-01)
+
+
+### Features
+
+* enable frontchannel logout for the UMC SAML client ([9529fbf](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-bootstrap/commit/9529fbf0b0db744f75dc0c80dcd94ecf20a74cde)), closes [univention/dev/internal/team-nubus#1238](https://git.knut.univention.de/univention/dev/internal/team-nubus/issues/1238)
+
 ## [0.12.2](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-bootstrap/compare/v0.12.1...v0.12.2) (2025-06-21)
 
 
