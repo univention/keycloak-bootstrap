@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.15.0](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-bootstrap/compare/v0.14.0...v0.15.0) (2025-07-17)
+
+
+### Features
+
+* update wait-for-dependency to 0.35.0 ([528debc](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-bootstrap/commit/528debc7e93a19870ea7b12b12a439a81201aef7)), closes [univention/dev/internal/team-nubus#1320](https://git.knut.univention.de/univention/dev/internal/team-nubus/issues/1320)
+
 ## [0.14.0](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-bootstrap/compare/v0.13.0...v0.14.0) (2025-07-17)
 
 
