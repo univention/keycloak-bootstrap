@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.14.0](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-bootstrap/compare/v0.13.0...v0.14.0) (2025-07-17)
+
+
+### Features
+
+* update ucs-base to 5.2.2-build.20250714 ([37cb4a8](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-bootstrap/commit/37cb4a8964c3fe6477bd6a64e9ee8f4844b06395)), closes [univention/dev/internal/team-nubus#1320](https://git.knut.univention.de/univention/dev/internal/team-nubus/issues/1320)
+
 ## [0.13.0](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-bootstrap/compare/v0.12.2...v0.13.0) (2025-07-01)
 
 
