@@ -89,10 +89,12 @@ repos:
           - "--strict"
 
   - repo: "https://github.com/ansible/ansible-lint"
-    rev: "v6.22.1"
+    rev: "v6.22.2"
     hooks:
       - id: "ansible-lint"
         name: "Ansible-lint"
+        additional_dependencies:
+          - "ansible>=2.13"
 
   - repo: "https://github.com/google/yapf"
     rev: "v0.40.2"
