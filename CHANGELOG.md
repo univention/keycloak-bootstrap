@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.15.1](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-bootstrap/compare/v0.15.0...v0.15.1) (2025-07-29)
+
+
+### Bug Fixes
+
+* **univention-keycloak:** added `univention-keycloak` from an ucs branch. ([1def197](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-bootstrap/commit/1def197f5033d9f250790050167551d2bd2be988)), closes [univention/dev/internal/team-nubus#1355](https://git.knut.univention.de/univention/dev/internal/team-nubus/issues/1355)
+* **univention-keycloak:** remove local `univention-keycloak` copy. ([806f487](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-bootstrap/commit/806f487004ae29f846d3e14c4c3ad05a5230669a)), closes [univention/dev/internal/team-nubus#1355](https://git.knut.univention.de/univention/dev/internal/team-nubus/issues/1355)
+
 ## [0.15.0](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-bootstrap/compare/v0.14.0...v0.15.0) (2025-07-17)
 
 
