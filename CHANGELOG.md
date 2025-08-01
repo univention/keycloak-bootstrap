@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.15.2](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-bootstrap/compare/v0.15.1...v0.15.2) (2025-08-01)
+
+
+### Bug Fixes
+
+* trigger release, use wait-for-keycloak script ([130a7da](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-bootstrap/commit/130a7dab091f28c76b53d8c73d18ded05799108f)), closes [#0](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-bootstrap/issues/0)
+
 ## [0.15.1](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-bootstrap/compare/v0.15.0...v0.15.1) (2025-07-29)
 
 
