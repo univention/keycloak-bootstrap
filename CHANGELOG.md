@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.15.3](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-bootstrap/compare/v0.15.2...v0.15.3) (2025-08-18)
+
+
+### Bug Fixes
+
+* **helm:** Blank lines after | are not valid yaml. Make the helm output parseable by ruamel ([2f35d20](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-bootstrap/commit/2f35d20d0db56e7df6976a529aa968879000d5f9)), closes [univention/dev/internal/team-nubus#989](https://git.knut.univention.de/univention/dev/internal/team-nubus/issues/989)
+
 ## [0.15.2](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-bootstrap/compare/v0.15.1...v0.15.2) (2025-08-01)
 
 
