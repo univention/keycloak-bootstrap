@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.15.4](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-bootstrap/compare/v0.15.3...v0.15.4) (2025-08-19)
+
+
+### Bug Fixes
+
+* **deps:** Update dependency univention/dev/nubus-for-k8s/common-ci to v1.44.1 ([7612c44](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-bootstrap/commit/7612c446f53bca1d0fd61923e38e657c5024005a)), closes [#0](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-bootstrap/issues/0)
+
 ## [0.15.3](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-bootstrap/compare/v0.15.2...v0.15.3) (2025-08-18)
 
 
