@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.16.0](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-bootstrap/compare/v0.15.5...v0.16.0) (2025-08-26)
+
+
+### Features
+
+* upgrade bitnami charts ([7312fc8](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-bootstrap/commit/7312fc8399a4f0c63fdef2bc59c826fd6be43e09)), closes [univention/dev/internal/team-nubus#1406](https://git.knut.univention.de/univention/dev/internal/team-nubus/issues/1406)
+
 ## [0.15.5](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-bootstrap/compare/v0.15.4...v0.15.5) (2025-08-19)
 
 
