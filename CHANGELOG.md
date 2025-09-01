@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.16.3](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-bootstrap/compare/v0.16.2...v0.16.3) (2025-09-01)
+
+
+### Bug Fixes
+
+* Correct dockerfile to be in line with our base image approach ([5b4ac4c](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-bootstrap/commit/5b4ac4cade968d9c25a837d487e609dd4e93752e)), closes [univention/dev/internal/team-nubus#1385](https://git.knut.univention.de/univention/dev/internal/team-nubus/issues/1385)
+* Use a customized version of univention-keycloak ([0bf5a75](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-bootstrap/commit/0bf5a7571a549af0ea979ea50e6ed0d87fb5570b)), closes [univention/dev/internal/team-nubus#1385](https://git.knut.univention.de/univention/dev/internal/team-nubus/issues/1385)
+
 ## [0.16.2](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-bootstrap/compare/v0.16.1...v0.16.2) (2025-08-28)
 
 
