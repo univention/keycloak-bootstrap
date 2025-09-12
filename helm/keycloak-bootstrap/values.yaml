@@ -286,4 +286,14 @@ config:
     # -- Service provider public hostname
     serviceProviderHostname: ""
 
+# -- Configuration for Open ID Connect Clients
+oidc:
+  rp:
+    umcserver:
+      clientSecret:
+        password: null
+        existingSecret:
+          name: null
+          keyMapping:
+            password: null
 ...
