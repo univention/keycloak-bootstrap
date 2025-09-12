@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.16.5](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-bootstrap/compare/v0.16.4...v0.16.5) (2025-09-12)
+
+
+### Bug Fixes
+
+* Upgrade base image to 5.2-3 and added new custom package ([214c848](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-bootstrap/commit/214c84857ab7efdf40e1320c95f36784af996bc4)), closes [#0](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-bootstrap/issues/0)
+
 ## [0.16.4](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-bootstrap/compare/v0.16.3...v0.16.4) (2025-09-06)
 
 
