@@ -1,5 +1,20 @@
 # Changelog
 
+## [0.17.0](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-bootstrap/compare/v0.16.5...v0.17.0) (2025-09-12)
+
+
+### Features
+
+* **keycloak-bootstrap:** add OIDC Relying Party client for UMC ([efaed2f](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-bootstrap/commit/efaed2f938d8eba4ebf5ed1450106dbd58a2e04c)), closes [univention/dev/internal/dev-issues/dev-incidents#138](https://git.knut.univention.de/univention/dev/internal/dev-issues/dev-incidents/issues/138)
+
+
+### Bug Fixes
+
+* **docker:** Bump version of keycloak client, old version is gone ([277d133](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-bootstrap/commit/277d133082e220f584e0c7dade11cf84839abc34)), closes [univention/dev/internal/dev-issues/dev-incidents#138](https://git.knut.univention.de/univention/dev/internal/dev-issues/dev-incidents/issues/138)
+* **helm:** Rename some valaues/variable to make their meaning clearer ([f1f2159](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-bootstrap/commit/f1f2159687faddd385bffb1bebc7cb385bd074f5)), closes [univention/dev/internal/dev-issues/dev-incidents#138](https://git.knut.univention.de/univention/dev/internal/dev-issues/dev-incidents/issues/138)
+* **keycloak-bootstrap:** Cleanup and use nubus-common as base ([93a9303](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-bootstrap/commit/93a9303038ef07e0103f319920739dabb8201f82)), closes [univention/dev/internal/dev-issues/dev-incidents#138](https://git.knut.univention.de/univention/dev/internal/dev-issues/dev-incidents/issues/138)
+* **keycloak-bootstrap:** Handle secrets correctly ([9db79f9](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-bootstrap/commit/9db79f93579acf2dd007c98bac3fb9ab91492b40)), closes [univention/dev/internal/dev-issues/dev-incidents#138](https://git.knut.univention.de/univention/dev/internal/dev-issues/dev-incidents/issues/138)
+
 ## [0.16.5](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-bootstrap/compare/v0.16.4...v0.16.5) (2025-09-12)
 
 
