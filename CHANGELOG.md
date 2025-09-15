@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.17.1](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-bootstrap/compare/v0.17.0...v0.17.1) (2025-09-15)
+
+
+### Bug Fixes
+
+* avoid using --force ([8ad41e6](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-bootstrap/commit/8ad41e6d2f781533b9317546b4053abaaea16bfa)), closes [univention/dev/internal/dev-issues/dev-incidents#158](https://git.knut.univention.de/univention/dev/internal/dev-issues/dev-incidents/issues/158)
+* ping right version ([b9ab205](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-bootstrap/commit/b9ab205bc3f9ae915c0b6b1fcf8359f9b3440a7e)), closes [univention/dev/internal/dev-issues/dev-incidents#158](https://git.knut.univention.de/univention/dev/internal/dev-issues/dev-incidents/issues/158)
+
 ## [0.17.0](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-bootstrap/compare/v0.16.5...v0.17.0) (2025-09-12)
 
 
