@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.17.4](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-bootstrap/compare/v0.17.3...v0.17.4) (2025-09-17)
+
+
+### Bug Fixes
+
+* add --use-refresh-tokens to UMC OAuth 2.0 client ([a05b6f4](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-bootstrap/commit/a05b6f483e3bc486884b002bd384327037f8df5f)), closes [univention/dev/internal/team-nubus#1435](https://git.knut.univention.de/univention/dev/internal/team-nubus/issues/1435)
+
 ## [0.17.3](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-bootstrap/compare/v0.17.2...v0.17.3) (2025-09-16)
 
 
