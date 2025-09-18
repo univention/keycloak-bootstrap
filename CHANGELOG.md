@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.17.5](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-bootstrap/compare/v0.17.4...v0.17.5) (2025-09-18)
+
+
+### Bug Fixes
+
+* Make the Keycloak client name static and not dynamic ([d5a18cd](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-bootstrap/commit/d5a18cd4e67549622e0a76a03bb4fe59d994290b)), closes [univention/dev/internal/team-nubus#1435](https://git.knut.univention.de/univention/dev/internal/team-nubus/issues/1435)
+* pin the new version ([1b212b0](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-bootstrap/commit/1b212b0c373b57e41134ae58b479788ca30dd59e)), closes [univention/dev/internal/team-nubus#1435](https://git.knut.univention.de/univention/dev/internal/team-nubus/issues/1435)
+
 ## [0.17.4](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-bootstrap/compare/v0.17.3...v0.17.4) (2025-09-17)
 
 
