@@ -17,7 +17,7 @@ repos:
         pass_filenames: false
 
   - repo: "https://github.com/pre-commit/pre-commit-hooks"
-    rev: "v4.5.0"
+    rev: "v6.0.0"
     hooks:
       - id: "check-added-large-files"
         name: "check for added large files"
@@ -53,7 +53,7 @@ repos:
         name: "trim trailing whitespace"
 
   - repo: "https://github.com/compilerla/conventional-pre-commit"
-    rev: "v3.0.0"
+    rev: "v4.2.0"
     hooks:
       - id: "conventional-pre-commit"
         name: "Conventional Commit"
@@ -66,7 +66,7 @@ repos:
         name: "Check issue reference"
 
   - repo: "https://git.knut.univention.de/univention/infrastructure/pre-commit-hooks/addlicense"
-    rev: "v1.0.1"
+    rev: "v1.0.3"
     hooks:
       - id: "addlicense"
         name: "Check or add license headers to files"
@@ -76,7 +76,7 @@ repos:
           - "yaml"
 
   - repo: "https://github.com/adrienverge/yamllint"
-    rev: "v1.33.0"
+    rev: "v1.37.1"
     hooks:
       - id: "yamllint"
         name: "yamllint"
@@ -89,7 +89,7 @@ repos:
           - "--strict"
 
   - repo: "https://github.com/ansible/ansible-lint"
-    rev: "v6.22.2"
+    rev: "v25.9.0"
     hooks:
       - id: "ansible-lint"
         name: "Ansible-lint"
@@ -97,7 +97,7 @@ repos:
           - "ansible>=2.13"
 
   - repo: "https://github.com/google/yapf"
-    rev: "v0.40.2"
+    rev: "v0.43.0"
     hooks:
       - id: "yapf"
         name: "yapf"
@@ -105,7 +105,7 @@ repos:
           - "python"
 
   - repo: "https://github.com/astral-sh/ruff-pre-commit"
-    rev: "v0.1.9"
+    rev: "v0.13.1"
     hooks:
       - id: "ruff"
         name: "ruff"
@@ -118,7 +118,7 @@ repos:
           - "--extend-select=COM"
 
   - repo: "https://github.com/hhatto/autopep8"
-    rev: "v2.0.4"
+    rev: "v2.3.2"
     hooks:
       - id: "autopep8"
         name: "autopep8"
@@ -131,7 +131,7 @@ repos:
           - "--experimental"
 
   - repo: "https://github.com/PyCQA/flake8"
-    rev: "6.1.0"
+    rev: "7.3.0"
     hooks:
       - id: "flake8"
         name: "flake8"
@@ -139,7 +139,7 @@ repos:
           - "python"
 
   - repo: "https://github.com/pylint-dev/pylint"
-    rev: "v3.0.3"
+    rev: "v3.3.8"
     hooks:
       - id: "pylint"
         name: "pylint"
@@ -151,7 +151,7 @@ repos:
           - "sphinx"
 
   - repo: "https://github.com/hadolint/hadolint"
-    rev: "v2.12.0"
+    rev: "v2.14.0"
     hooks:
       - id: "hadolint"
         name: "Lint Dockerfiles"
@@ -191,13 +191,13 @@ repos:
           - "--external-sources"
 
   - repo: "https://github.com/gruntwork-io/pre-commit"
-    rev: "v0.1.23"
+    rev: "v0.1.30"
     hooks:
       - id: "helmlint"
         name: "helmlint"
 
   - repo: "https://github.com/norwoodj/helm-docs"
-    rev: "v1.12.0"
+    rev: "v1.14.2"
     hooks:
       - id: "helm-docs"
         name: "Helm Docs"
@@ -215,8 +215,8 @@ repos:
         stages:
           - "manual"
 
-  - repo: "https://git.knut.univention.de/univention/dev/tooling/kyverno-test-pre-commit"
-    rev: "v0.3.0"
+  - repo: "https://git.knut.univention.de/univention/dev/tooling/kyverno-test-pre-commit/"
+    rev: "v0.5.0"
     hooks:
       - id: "kyverno-test"
 
