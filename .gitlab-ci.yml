@@ -25,6 +25,14 @@ lint-pre-commit:
   before_script:
     - "helm repo add bitnami https://charts.bitnami.com/bitnami"
 
+chart-tests:
+  image: "gitregistry.knut.univention.de/univention/dev/nubus-for-k8s/common-helm/testrunner:0.27.0"
+  stage: "test"
+  needs: []
+  script:
+    - "helm dep build helm/keycloak-bootstrap"
+    - "pytest -vv helm-unittests"
+
 package-helm-charts:
   before_script:
     - "helm repo add bitnami https://charts.bitnami.com/bitnami"
