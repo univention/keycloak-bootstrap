@@ -6,16 +6,6 @@
 # See https://pre-commit.com for more information
 # See https://pre-commit.com/hooks.html for more hooks
 repos:
-  # "Copy .env.udm-rest-api.example so that docker-compose.yaml can be linted"
-  - repo: "local"
-    hooks:
-      - id: "copy-udm-rest-api"
-        name: "copy-udm-rest-api"
-        entry: "sh -c 'if [ ! -f .env.udm-rest-api ]; then cp .env.udm-rest-api.example .env.udm-rest-api; fi'"
-        language: "system"
-        files: "docker-compose.yaml"
-        pass_filenames: false
-
   - repo: "https://github.com/pre-commit/pre-commit-hooks"
     rev: "v6.0.0"
     hooks:
@@ -113,7 +103,7 @@ repos:
           - "python"
         args:
           - "--fix"
-          - "--show-source"
+          - "--show-files"
           - "--exit-non-zero-on-fix"
           - "--extend-select=COM"
 
@@ -145,6 +135,10 @@ repos:
         name: "pylint"
         types:
           - "python"
+        # Exclude helm-unittests (helm chart test helpers) from pylint to avoid
+        # false positives (import paths, docstring requirements, few-public-methods, etc.).
+        # If you later want to lint some of these, remove or narrow this regex.
+        exclude: "^helm-unittests/"
         additional_dependencies:
           - "pytest"
           - "requests"
