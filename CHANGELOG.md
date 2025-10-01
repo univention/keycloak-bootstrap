@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.17.6](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-bootstrap/compare/v0.17.5...v0.17.6) (2025-10-01)
+
+
+### Bug Fixes
+
+* remove pined version of univention-keycloak-client ([d526bb2](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-bootstrap/commit/d526bb20538012e4e070545d52f777dee6ff1af9)), closes [univention/dev/internal/team-nubus#1424](https://git.knut.univention.de/univention/dev/internal/team-nubus/issues/1424)
+
 ## [0.17.5](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-bootstrap/compare/v0.17.4...v0.17.5) (2025-09-18)
 
 
