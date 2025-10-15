@@ -1,5 +1,21 @@
 # Changelog
 
+## [0.18.0](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-bootstrap/compare/v0.17.9...v0.18.0) (2025-10-15)
+
+
+### Features
+
+* adjust to common behavior / add tests for annotations, labels and image configuration ([ad78dd7](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-bootstrap/commit/ad78dd7af15cf9da41b67ab70c2a2ead99fcb193)), closes [univention/dev/internal/team-nubus#1398](https://git.knut.univention.de/univention/dev/internal/team-nubus/issues/1398)
+* generate keycloak secret / add tests on secrets ([7a4e35d](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-bootstrap/commit/7a4e35d5417e5615ae648f7dbc4731b06e55fc5c)), closes [univention/dev/internal/team-nubus#1398](https://git.knut.univention.de/univention/dev/internal/team-nubus/issues/1398)
+* generate ldap secret / add tests on secrets ([03dfe00](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-bootstrap/commit/03dfe00cb6fad1bfaaa436c66198e0d3528180a9)), closes [univention/dev/internal/team-nubus#1398](https://git.knut.univention.de/univention/dev/internal/team-nubus/issues/1398)
+* generate oidc secret / add tests on secrets ([a9cf280](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-bootstrap/commit/a9cf28047c9dcb65cd1a4eee0c99ed00987e6b28)), closes [univention/dev/internal/team-nubus#1398](https://git.knut.univention.de/univention/dev/internal/team-nubus/issues/1398)
+
+
+### Bug Fixes
+
+* ensure bootstrap job name stays same as before ([cffa18a](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-bootstrap/commit/cffa18a28cf871a85599c03ff6e33d5d06de1a25)), closes [univention/dev/internal/team-nubus#1398](https://git.knut.univention.de/univention/dev/internal/team-nubus/issues/1398)
+* use normal ucs-base base image which includes a correct version of univention-keycloak now ([6b06182](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-bootstrap/commit/6b061821337d14c54ed1dbbf40cd461d5e5f8e71)), closes [univention/dev/internal/team-nubus#1398](https://git.knut.univention.de/univention/dev/internal/team-nubus/issues/1398)
+
 ## [0.17.9](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-bootstrap/compare/v0.17.8...v0.17.9) (2025-10-15)
 
 
