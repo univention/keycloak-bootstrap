@@ -8,14 +8,11 @@ kind: "Job"
 metadata:
   name: "{{ include "common.names.fullname" . }}-bootstrap-{{ .Release.Revision }}"
   labels:
-    {{- include "common.labels.standard" . | nindent 4 }}
-    {{- if .Values.additionalLabels }}
-    {{- include "common.tplvalues.render" ( dict "value" .Values.additionalLabels "context" . ) | nindent 4 }}
-    {{- end }}
-  annotations:
-    {{- if .Values.additionalAnnotations }}
-    {{- include "common.tplvalues.render" ( dict "value" .Values.additionalAnnotations "context" . ) | nindent 4 }}
-    {{- end }}
+    {{- include "common.labels.standard" ( dict "customLabels" .Values.additionalLabels "context" . ) | nindent 4 }}
+  {{- include "nubus-common.annotations.render" ( dict
+    "values" ( list .Values.additionalAnnotations )
+    "context" . )
+    | nindent 2 }}
 spec:
   template:
     metadata:
@@ -63,8 +60,8 @@ spec:
         {{- if .Values.containerSecurityContext.enabled }}
         securityContext: {{- omit .Values.containerSecurityContext "enabled" | toYaml | nindent 10 }}
         {{- end }}
-        image: "{{ coalesce .Values.waitForDependency.image.registry .Values.global.imageRegistry }}/{{ .Values.waitForDependency.image.repository }}{{ if .Values.waitForDependency.image.sha256 }}@sha256:{{ .Values.waitForDependency.image.sha256 }}{{ else }}:{{ .Values.waitForDependency.image.tag }}{{ end }}"
-        imagePullPolicy: {{ coalesce .Values.waitForDependency.image.imagePullPolicy .Values.global.imagePullPolicy | quote }}
+        image: "{{ .Values.waitForDependency.image.registry | default .Values.global.imageRegistry }}/{{ .Values.waitForDependency.image.repository }}{{ if .Values.waitForDependency.image.sha256 }}@sha256:{{ .Values.waitForDependency.image.sha256 }}{{ else }}:{{ .Values.waitForDependency.image.tag }}{{ end }}"
+        imagePullPolicy: {{ coalesce .Values.waitForDependency.image.pullPolicy .Values.global.imagePullPolicy | quote }}
         envFrom:
           - configMapRef:
               name: {{ printf "%s-init" (include "common.names.fullname" .) }}
@@ -80,12 +77,12 @@ spec:
           {{- include "common.tplvalues.render" (dict "value" .Values.extraVolumes "context" .) | nindent 10 }}
         {{- end }}
       containers:
-        - name: "univention-keycloak-bootstrap"
+        - name: "main"
           {{- if .Values.containerSecurityContext.enabled }}
           securityContext: {{- omit .Values.containerSecurityContext "enabled" | toYaml | nindent 12 }}
           {{- end }}
-          image: "{{ coalesce .Values.image.registry .Values.global.imageRegistry }}/{{ .Values.image.repository }}:{{ .Values.image.tag }}"
-          imagePullPolicy: {{ coalesce .Values.image.imagePullPolicy .Values.global.imagePullPolicy | quote }}
+          image: "{{ .Values.image.registry | default .Values.global.imageRegistry }}/{{ .Values.image.repository }}{{ if .Values.image.sha256 }}@sha256:{{ .Values.image.sha256 }}{{ else }}:{{ .Values.image.tag }}{{ end }}"
+          imagePullPolicy: {{ coalesce .Values.image.pullPolicy .Values.global.imagePullPolicy | quote }}
           command:
             - "/app/entrypoint.sh"
           envFrom:
@@ -93,24 +90,24 @@ spec:
                 name: {{ include "common.names.fullname" .  | quote }}
           env:
             - name: KEYCLOAK_USERNAME
-              value: {{ tpl .Values.keycloak.auth.username . }}
+              value: {{ tpl (required "keycloak.auth.username is required" .Values.keycloak.auth.username) . }}
             - name: KEYCLOAK_PASSWORD
               valueFrom:
                 secretKeyRef:
-                  name: {{ tpl .Values.keycloak.auth.existingSecret.name . }}
-                  key: {{ include "common.secrets.key" (dict "existingSecret" .Values.keycloak.auth.existingSecret "key" "adminPassword") | quote }}
+                  name: {{ include "nubus-common.secrets.name" (dict "existingSecret" .Values.keycloak.auth.existingSecret "defaultNameSuffix" "keycloak-credentials" "context" .)}}
+                  key: {{ include "nubus-common.secrets.key" (dict "existingSecret" .Values.keycloak.auth.existingSecret "key" "adminPassword" "context" .)}}
             - name: LDAP_BIND_DN
-              value: {{ tpl .Values.ldap.auth.bindDn . }}
+              value: {{ tpl (required "ldap.auth.bindDn username is required" .Values.ldap.auth.bindDn) . }}
             - name: LDAP_BIND_PW
               valueFrom:
                 secretKeyRef:
-                  name: {{ tpl .Values.ldap.auth.existingSecret.name . }}
-                  key: {{ include "common.secrets.key" (dict "existingSecret" .Values.ldap.auth.existingSecret "key" "password") | quote }}
+                  name: {{ include "nubus-common.secrets.name" (dict "existingSecret" .Values.ldap.auth.existingSecret "defaultNameSuffix" "ldap-credentials" "context" .)}}
+                  key: {{ include "nubus-common.secrets.key" (dict "existingSecret" .Values.ldap.auth.existingSecret "key" "password" "context" .)}}
             - name: UMC_OIDC_CLIENT_SECRET
               valueFrom:
                 secretKeyRef:
-                  name: {{ include "nubus-common.secrets.name" (dict "existingSecret" .Values.oidc.rp.umcserver.clientSecret.existingSecret "defaultNameSuffix" "oidc-rp-umc-server" "context" .) | quote }}
-                  key: {{ include "nubus-common.secrets.key" (dict "existingSecret" .Values.oidc.rp.umcserver.clientSecret.existingSecret "key" "password") | quote }}
+                  name: {{ include "nubus-common.secrets.name" (dict "existingSecret" .Values.oidc.relyingParty.umcServer.clientSecret.existingSecret "defaultNameSuffix" "oidc-rp-umc-server" "context" .) }}
+                  key: {{ include "nubus-common.secrets.key" (dict "existingSecret" .Values.oidc.relyingParty.umcServer.clientSecret.existingSecret "key" "password" "context" .) }}
           {{- with .Values.extraEnvVars }}
             {{- . | toYaml | nindent 12 }}
           {{- end }}
@@ -122,7 +119,7 @@ spec:
               subPath: {{ include "common.secrets.key" (dict "existingSecret" .Values.ldap.auth.existingSecret "key" "password") | quote }}
             - mountPath: "/credentials/keycloak.secret"
               name: "keycloak-credentials-volume"
-              subPath: {{ include "common.secrets.key" (dict "existingSecret" .Values.keycloak.auth.existingSecret "key" "adminPassword") | quote }}
+              subPath: {{ include "nubus-common.secrets.key" (dict "existingSecret" .Values.keycloak.auth.existingSecret "key" "adminPassword" "context" .) }}
             - mountPath: "/tmp"
               name: "temp-dir"
             {{- if .Values.extraVolumeMounts }}
@@ -138,10 +135,18 @@ spec:
             name: {{ printf "%s-init" (include "common.names.fullname" .) }}
         - name:  "keycloak-credentials-volume"
           secret:
+          {{- if (.Values.keycloak.auth.existingSecret).name }}
             secretName: {{ tpl .Values.keycloak.auth.existingSecret.name . }}
+          {{- else }}
+            secretName: {{ include "nubus-common.secrets.name" (dict "defaultNameSuffix" "keycloak-credentials" "context" .) }}
+          {{- end }}
         - name:  "ldap-credentials-volume"
           secret:
+          {{- if (.Values.ldap.auth.existingSecret).name }}
             secretName: {{ tpl .Values.ldap.auth.existingSecret.name . }}
+          {{- else }}
+            secretName: {{ include "nubus-common.secrets.name" (dict "defaultNameSuffix" "ldap-credentials" "context" .) }}
+          {{- end }}
         - name: "bootstrap-volume"
           configMap:
             name: {{ printf "%s-bootstrap-data" (include "common.names.fullname" .) | quote }}
