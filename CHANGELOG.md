@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.19.0](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-bootstrap/compare/v0.18.0...v0.19.0) (2025-10-17)
+
+
+### Features
+
+* add toggle for enabling importing users from LDAP into Keycloak ([25e5054](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-bootstrap/commit/25e505406693005d4aa4486e83af2524c72344cf)), closes [univention/dev/internal/team-nubus#1448](https://git.knut.univention.de/univention/dev/internal/team-nubus/issues/1448)
+
+
+### Bug Fixes
+
+* bump ucs-base-image ([346c4cb](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-bootstrap/commit/346c4cb2ed2524ae627422180879907953e52314)), closes [univention/dev/internal/team-nubus#1448](https://git.knut.univention.de/univention/dev/internal/team-nubus/issues/1448)
+
 ## [0.18.0](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-bootstrap/compare/v0.17.9...v0.18.0) (2025-10-15)
 
 
