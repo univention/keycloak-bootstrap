@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.19.3](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-bootstrap/compare/v0.19.2...v0.19.3) (2025-10-24)
+
+
+### Bug Fixes
+
+* **deps:** Update gitregistry.knut.univention.de/univention/dev/projects/ucs-base-image/ucs-base Docker tag to v5.2.3-build.20251023 ([18f37b6](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-bootstrap/commit/18f37b6adf962e91795c873ab56b4ab559a154f5)), closes [#0](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-bootstrap/issues/0)
+
 ## [0.19.2](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-bootstrap/compare/v0.19.1...v0.19.2) (2025-10-23)
 
 
