@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.19.14](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-bootstrap/compare/v0.19.13...v0.19.14) (2025-11-21)
+
+
+### Bug Fixes
+
+* bump wait-for-dependency ([a2912d5](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-bootstrap/commit/a2912d5188f24fde4982547cd3973eba91d44c64)), closes [univention/dev/internal/team-nubus#1476](https://git.knut.univention.de/univention/dev/internal/team-nubus/issues/1476)
+
 ## [0.19.13](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-bootstrap/compare/v0.19.12...v0.19.13) (2025-11-20)
 
 
