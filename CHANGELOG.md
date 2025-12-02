@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.19.18](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-bootstrap/compare/v0.19.17...v0.19.18) (2025-12-02)
+
+
+### Bug Fixes
+
+* bump image to errata 298 ([bb8b812](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-bootstrap/commit/bb8b81288ed52a4c87b329c59019d2be40b75c94)), closes [univention/dev/internal/team-nubus#1543](https://git.knut.univention.de/univention/dev/internal/team-nubus/issues/1543)
+
 ## [0.19.17](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-bootstrap/compare/v0.19.16...v0.19.17) (2025-11-29)
 
 
