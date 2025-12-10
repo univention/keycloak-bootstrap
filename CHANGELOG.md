@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.20.0](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-bootstrap/compare/v0.19.20...v0.20.0) (2025-12-10)
+
+
+### Features
+
+* **helm:** Add component-specific extraEnvVars support ([bff6b4b](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-bootstrap/commit/bff6b4bd26aa4ac771930405006b39520c50a7ac)), closes [univention/dev/internal/team-nubus#977](https://git.knut.univention.de/univention/dev/internal/team-nubus/issues/977)
+
 ## [0.19.20](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-bootstrap/compare/v0.19.19...v0.19.20) (2025-12-10)
 
 
