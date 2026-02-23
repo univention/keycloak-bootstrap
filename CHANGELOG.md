@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.21.0](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-bootstrap/compare/v0.20.6...v0.21.0) (2026-02-23)
+
+
+### Features
+
+* Support fetching mapped LDAP attributes in Keycloak ([aeaac7e](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-bootstrap/commit/aeaac7e21017c1cb2863d43e1d2dbd36bfb6c29a)), closes [univention/dev/internal/team-nubus#1549](https://git.knut.univention.de/univention/dev/internal/team-nubus/issues/1549)
+
+
+### Bug Fixes
+
+* **Dockerfile:** update base image version ([842d035](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-bootstrap/commit/842d0355298d0ad27dcf2a66e87534d2733a896c)), closes [univention/dev/internal/team-nubus#1549](https://git.knut.univention.de/univention/dev/internal/team-nubus/issues/1549)
+
 ## [0.20.6](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-bootstrap/compare/v0.20.5...v0.20.6) (2026-02-11)
 
 
