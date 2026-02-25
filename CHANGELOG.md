@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.21.2](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-bootstrap/compare/v0.21.1...v0.21.2) (2026-02-25)
+
+
+### Bug Fixes
+
+* **deps:** Update nubus/images/wait-for-dependency Docker tag to v0.36.6 ([5080a69](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-bootstrap/commit/5080a69c5e351b5824b470d578c22d1a42f4327b)), closes [#0](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-bootstrap/issues/0)
+
 ## [0.21.1](https://git.knut.univention.de/univention/dev/projects/keycloak/keycloak-bootstrap/compare/v0.21.0...v0.21.1) (2026-02-24)
 
 
